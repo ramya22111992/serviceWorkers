@@ -1,0 +1,15 @@
+<app-update></app-update>
+
+
+<button  (click)="subscribeToNotifications()">Subscribe to Notifications</button>
+
+<form>
+<textarea style="width: 50%;height: 70px;" [(ngModel)]="payload" name="payload">
+</textarea>
+</form>
+
+<button (click)="triggerMessage()" type="submit">Trigger Message</button>
+
+<!--<button (click)="test()">Test GET request</button>-->
+
+<router-outlet></router-outlet>
